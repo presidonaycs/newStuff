@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# install 
+# bin/npm
+
+echo Installing npm module: $1
+
+
+docker exec -u node edsg_1 npm install $1
+

@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  edsg:
+    build: .
+    container_name: edsg_global_setup
+    command: npm run start
+    stdin_open: true
+    tty: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app:cached

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# runs JS and SCSS unit tests
+# bin/runtests
+
+echo Running tests...
+
+# Add --runInBand argument to the line below to enable console.log in the tests. Ex: docker-compose run --rm uifym npm test client/packages/unit-outline/__tests__/UnitsWidget.test.js --runInBand -- --watchAll
+docker-compose run --rm edsg npm test -- --watchAll
